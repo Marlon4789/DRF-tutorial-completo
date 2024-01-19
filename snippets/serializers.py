@@ -15,17 +15,17 @@ class SnippetSerializer(serializers.ModelSerializer):
 #     style = serializers.ChoiceField(choices=STYLE_CHOICES, default='python')
 
 
-#     def create(self, validated_data):
-#         # Crear y retornar una nueva instancia 'Snippet' dados los datos validados.
-#         return Snippet.objects.create(**validated_data)
-    
+        # def create(self, validated_data):
+        #     # Crear y retornar una nueva instancia 'Snippet' dados los datos validados.
+        #     return Snippet.objects.create(**validated_data)
+        
 
-#     def update(self, instance, validated_data):
-#         #Actualizar y retornar un instancia de 'Snippet' dado los datos validados.
-#         instance.title = validated_data.get('title', instance.title)
-#         instance.code = validated_data.get('code', instance.code)
-#         instance.linenos = validated_data.get('linenos', instance.linenos)
-#         instance.language = validated_data.get('language', instance.language)
-#         instance.style = validated_data.get('style', instance.style)
-#         instance.save()
-#         return instance
+        # def update(self, instance, validated_data):
+        #     #Actualizar y retornar un instancia de 'Snippet' dado los datos validados.
+        #     instance.title = validated_data.get('title', instance.title)
+        #     instance.code = validated_data.get('code', instance.code)
+        #     instance.linenos = validated_data.get('linenos', instance.linenos)
+        #     instance.language = validated_data.get('language', instance.language)
+        #     instance.style = validated_data.get('style', instance.style)
+        #     instance.save()
+        #     return instance
